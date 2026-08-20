@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartInsure Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div>Customer Support: <strong>1800-XXX-XXXX</strong></div>
+        <div class="topbar-links">
+          <span>Email: support@smartinsure.com</span>
+          <span class="divider">|</span>
+          <span>Claims Assistance</span>
+          <span class="divider">|</span>
+          <span>Branch Locator</span>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand" aria-label="SmartInsure logo">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div class="brand-text">SMARTINSURE</div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="index.html#insurance">Insurance</a>
+          <a href="policies.html">Policies</a>
+          <a href="claim.html">Claims</a>
+          <a href="index.html#about">About Us</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-secondary" href="login.html">Login</a>
+          <a class="btn btn-gold" href="login.html">Register</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container" style="padding: 72px 0;">
+      <div class="auth-shell">
+        <aside class="auth-illustration">
+          <div class="text-panel">
+            <h2>Protection for every chapter.</h2>
+            <p>Your policies, claims, and coverage details are protected with SmartInsure’s secure insurance portal.</p>
+          </div>
+
+          <div class="avatar-stack">
+            <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:100%;height:auto;">
+              <rect x="30" y="30" width="360" height="180" rx="22" fill="rgba(255,255,255,0.08)"/>
+              <rect x="70" y="55" width="120" height="130" rx="18" fill="rgba(255,255,255,0.12)"/>
+              <rect x="220" y="70" width="110" height="20" rx="10" fill="#d7b15a" opacity="0.9"/>
+              <rect x="220" y="106" width="92" height="16" rx="8" fill="rgba(255,255,255,0.5)"/>
+              <rect x="220" y="134" width="108" height="16" rx="8" fill="rgba(255,255,255,0.5)"/>
+              <rect x="220" y="162" width="76" height="16" rx="8" fill="rgba(255,255,255,0.5)"/>
+              <circle cx="128" cy="95" r="36" fill="#e5c979"/>
+              <path d="M92 165 C109 140, 147 140, 165 165 L165 170 C165 186, 152 198, 128 198 C104 198, 92 186, 92 170Z" fill="#ffffff" opacity="0.9"/>
+              <rect x="30" y="215" width="140" height="18" rx="9" fill="#d7b15a" opacity="0.8"/>
+              <rect x="280" y="215" width="110" height="18" rx="9" fill="rgba(255,255,255,0.4)"/>
+            </svg>
+          </div>
+        </aside>
+
+        <section class="auth-form-wrap">
+          <div class="auth-form">
+            <h2>Welcome Back</h2>
+            <p class="sub">Login to SmartInsure</p>
+
+            <form>
+              <div class="field-group">
+                <label for="email">Email / Username</label>
+                <input id="email" type="text" placeholder="name@smartinsure.com" />
+              </div>
+
+              <div class="field-group">
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Enter your password" />
+              </div>
+
+              <div class="field-row">
+                <label><input type="checkbox" /> Remember me</label>
+                <a href="#" class="inline-link">Forgot Password?</a>
+              </div>
+
+              <a class="btn btn-primary" href="dashboard.html">Login</a>
+            </form>
+
+            <div class="auth-note">
+              Don’t have an account?<br />
+              <a href="#" class="inline-link">Register Now</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>SmartInsure</h3>
+            <p>We help families and individuals build secure futures with dependable insurance coverage, transparent service, and expert support.</p>
+          </div>
+          <div>
+            <h4>Insurance</h4>
+            <ul>
+              <li>Life</li>
+              <li>Health</li>
+              <li>Vehicle</li>
+              <li>Family</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Customer Service</h4>
+            <ul>
+              <li>Contact Us</li>
+              <li>Claims</li>
+              <li>FAQs</li>
+              <li>Support</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li>Privacy Policy</li>
+              <li>Terms &amp; Conditions</li>
+              <li>Disclaimer</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>© <span id="currentYear"></span> SmartInsure. All Rights Reserved.</div>
+          <div class="sdgs">
+            <span>SDG 3 — Good Health and Well-being</span>
+            <span>SDG 8 — Decent Work and Economic Growth</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

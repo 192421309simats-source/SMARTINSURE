@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track Your Claim | SmartInsure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div>Customer Support: <strong>1800-XXX-XXXX</strong></div>
+        <div class="topbar-links">
+          <span>Email: support@smartinsure.com</span>
+          <span class="divider">|</span>
+          <span>Claims Assistance</span>
+          <span class="divider">|</span>
+          <span>Branch Locator</span>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div class="brand-text">SMARTINSURE</div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="index.html#insurance">Insurance</a>
+          <a href="policies.html">Policies</a>
+          <a href="claim.html" class="active">Claims</a>
+          <a href="index.html#about">About Us</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-secondary" href="dashboard.html">Dashboard</a>
+          <a class="btn btn-gold" href="login.html">Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero-compact">
+        <div class="container">
+          <h1>Track Your Claim</h1>
+          <div class="breadcrumbs">
+            <span>Home</span>
+            <span>›</span>
+            <span>Track Claim</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="recommendation-banner" style="margin-bottom:18px;">
+            <div>
+              <div style="color:var(--muted); font-weight:600;">Enter Claim Number</div>
+            </div>
+            <div class="header-actions" style="width:min(100%,420px);">
+              <input type="text" value="CLM-2026-000145" class="search-box" style="min-width:0; width:100%;" />
+              <button class="btn btn-primary">Search</button>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Claim ID: CLM-2026-000145</h3>
+              <span class="tag status info">Submitted</span>
+            </div>
+
+            <div class="claim-progress">
+              <div class="progress-item done">
+                <span>Submitted</span>
+                <div class="progress-line"></div>
+                <span class="dot"></span>
+              </div>
+              <div class="progress-item done">
+                <span>Documents Verified</span>
+                <div class="progress-line"></div>
+                <span class="dot"></span>
+              </div>
+              <div class="progress-item active">
+                <span>Under Review</span>
+                <div class="progress-line"></div>
+                <span class="dot"></span>
+              </div>
+              <div class="progress-item">
+                <span>Decision</span>
+                <div class="progress-line"></div>
+                <span class="dot"></span>
+              </div>
+              <div class="progress-item">
+                <span>Settlement</span>
+                <div class="progress-line"></div>
+                <span class="dot"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>SmartInsure</h3>
+            <p>We help families and individuals build secure futures with dependable insurance coverage, transparent service, and expert support.</p>
+          </div>
+          <div>
+            <h4>Insurance</h4>
+            <ul>
+              <li>Life</li>
+              <li>Health</li>
+              <li>Vehicle</li>
+              <li>Family</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Customer Service</h4>
+            <ul>
+              <li>Contact Us</li>
+              <li>Claims</li>
+              <li>FAQs</li>
+              <li>Support</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li>Privacy Policy</li>
+              <li>Terms &amp; Conditions</li>
+              <li>Disclaimer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>© <span id="currentYear"></span> SmartInsure. All Rights Reserved.</div>
+          <div class="sdgs"><span>SDG 3 — Good Health and Well-being</span><span>SDG 8 — Decent Work and Economic Growth</span></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

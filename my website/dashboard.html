@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartInsure Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-layout">
+      <aside class="sidebar">
+        <div class="brand-wrap">
+          <div class="brand-text" style="font-size:1.2rem; color:#fff; letter-spacing:0.08em;">SMARTINSURE</div>
+        </div>
+
+        <ul class="nav-list">
+          <li><a href="dashboard.html" class="active"><span class="icon">◉</span> Dashboard</a></li>
+          <li><a href="#"><span class="icon">◌</span> My Profile</a></li>
+          <li><a href="policies.html"><span class="icon">▣</span> My Policies</a></li>
+          <li><a href="recommendations.html"><span class="icon">★</span> Recommended Policies</a></li>
+          <li><a href="comparison.html"><span class="icon">≣</span> Compare Policies</a></li>
+          <li><a href="#"><span class="icon">₹</span> Payments</a></li>
+          <li><a href="claim.html"><span class="icon">✦</span> Submit Claim</a></li>
+          <li><a href="track-claim.html"><span class="icon">⌁</span> My Claims</a></li>
+          <li><a href="#"><span class="icon">🔔</span> Notifications</a></li>
+          <li><a href="#"><span class="icon">⚙</span> Settings</a></li>
+          <li><a href="login.html"><span class="icon">↩</span> Logout</a></li>
+        </ul>
+      </aside>
+
+      <main class="content-area">
+        <header class="topbar-dashboard">
+          <div>
+            <h2>Welcome, Ananya Sharma</h2>
+            <p>Your insurance at a glance</p>
+          </div>
+          <div class="user-pill">
+            <div class="avatar">AS</div>
+            <div>
+              <strong>Ananya Sharma</strong><br />
+              <span class="muted">Policyholder</span>
+            </div>
+          </div>
+        </header>
+
+        <section class="kpi-grid">
+          <article class="kpi-card">
+            <div class="metric"><strong>04</strong><span>+2 this year</span></div>
+            <div class="label">Active Policies</div>
+          </article>
+          <article class="kpi-card">
+            <div class="metric"><strong>₹42,300</strong><span>+8.2%</span></div>
+            <div class="label">Premium Paid</div>
+          </article>
+          <article class="kpi-card">
+            <div class="metric"><strong>02</strong><span>1 under review</span></div>
+            <div class="label">Pending Claims</div>
+          </article>
+          <article class="kpi-card">
+            <div class="metric"><strong>28</strong><span>Low risk</span></div>
+            <div class="label">Risk Score</div>
+          </article>
+        </section>
+
+        <section class="main-panels">
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Active policies</h3>
+              <span class="tag status active">Protected</span>
+            </div>
+
+            <div class="policy-list">
+              <div class="list-item">
+                <div>
+                  <strong>Smart Life Secure Plus</strong>
+                  <span>Policy No. SL-21065</span>
+                </div>
+                <span class="tag status info">₹8,500 / yr</span>
+              </div>
+              <div class="list-item">
+                <div>
+                  <strong>Health Care Advance</strong>
+                  <span>Policy No. HC-70241</span>
+                </div>
+                <span class="tag status active">₹15,200 / yr</span>
+              </div>
+              <div class="list-item">
+                <div>
+                  <strong>SecureDrive Plus</strong>
+                  <span>Policy No. SD-90591</span>
+                </div>
+                <span class="tag status pending">₹6,100 / yr</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Recent claims</h3>
+              <span class="tag status pending">Updated</span>
+            </div>
+
+            <div class="claim-list">
+              <div class="list-item">
+                <div>
+                  <strong>CLM-2026-000145</strong>
+                  <span>Hospitalisation claim</span>
+                </div>
+                <span class="tag status active">In review</span>
+              </div>
+              <div class="list-item">
+                <div>
+                  <strong>CLM-2026-000103</strong>
+                  <span>Vehicle accident</span>
+                </div>
+                <span class="tag status pending">Documents needed</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

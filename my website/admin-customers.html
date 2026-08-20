@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Management | SmartInsure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="admin-shell">
+      <aside class="admin-sidebar">
+        <h1 class="admin-title">SMARTINSURE</h1>
+        <nav class="admin-nav" aria-label="Admin navigation">
+          <a href="admin.html">Dashboard</a>
+          <a href="admin-customers.html" class="active">Customer Management</a>
+          <a href="admin-policy-management.html">Policy Management</a>
+          <a href="#">Policy Purchases</a>
+          <a href="admin-claims.html">Claim Management</a>
+          <a href="admin-fraud.html">Fraud Detection</a>
+          <a href="#">Risk Analytics</a>
+          <a href="#">Payments</a>
+          <a href="#">Notifications</a>
+          <a href="#">Reports</a>
+          <a href="#">Settings</a>
+          <a href="login.html">Logout</a>
+        </nav>
+      </aside>
+
+      <main class="admin-main">
+        <header class="admin-header">
+          <h1>Customer Management</h1>
+          <div class="user-pill">
+            <div class="avatar">AM</div>
+            <div>
+              <strong>Admin Manager</strong><br />
+              <span class="muted">Operations</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="admin-table-wrap">
+          <div class="segment-title" style="padding:16px 20px 0; margin:0;">
+            <h3>Customer Portfolio</h3>
+            <input class="search-box" type="text" placeholder="Search customer" />
+          </div>
+
+          <div class="table-wrap" style="padding:0 0 18px;">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Customer ID</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Policies</th>
+                  <th>Claims</th>
+                  <th>Risk Score</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="customersTbody">
+                <!-- Filled dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

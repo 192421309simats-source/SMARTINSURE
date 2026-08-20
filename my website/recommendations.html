@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recommended Policies | SmartInsure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div>Customer Support: <strong>1800-XXX-XXXX</strong></div>
+        <div class="topbar-links">
+          <span>Email: support@smartinsure.com</span>
+          <span class="divider">|</span>
+          <span>Claims Assistance</span>
+          <span class="divider">|</span>
+          <span>Branch Locator</span>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div class="brand-text">SMARTINSURE</div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="index.html#insurance">Insurance</a>
+          <a href="policies.html">Policies</a>
+          <a href="claim.html">Claims</a>
+          <a href="index.html#about">About Us</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-secondary" href="dashboard.html">Dashboard</a>
+          <a class="btn btn-gold" href="login.html">Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero-compact">
+        <div class="container">
+          <h1>Personalized Insurance Recommendations</h1>
+          <div class="breadcrumbs">
+            <span>Home</span>
+            <span>›</span>
+            <span>Recommendations</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="recommendation-banner">
+            <div>
+              <div class="eyebrow">Your Risk Profile</div>
+              <h3 style="margin:12px 0 0; color:var(--navy-900);">Risk Score: 28 / 100</h3>
+            </div>
+            <div class="risk-box">
+              <div>
+                <span class="muted">Risk Level</span>
+                <strong>LOW</strong>
+              </div>
+            </div>
+          </div>
+
+          <form id="profileForm" class="profile-form" style="margin:18px 0 28px; display:flex; gap:12px; flex-wrap:wrap;">
+            <input name="age" type="number" placeholder="Age" required style="padding:8px; width:120px;" />
+            <input name="income" type="number" placeholder="Annual Income (₹)" required style="padding:8px; width:180px;" />
+            <input name="dependents" type="number" placeholder="Dependents" style="padding:8px; width:120px;" />
+            <input name="desired_coverage" type="number" placeholder="Desired Coverage (in thousands)" style="padding:8px; width:220px;" />
+            <input name="health_conditions" type="text" placeholder="Health conditions (comma separated)" style="padding:8px; width:320px;" />
+            <label style="display:flex; align-items:center; gap:6px;"><input type="checkbox" name="owns_vehicle" /> Owns vehicle</label>
+            <button class="btn btn-primary" type="submit">Get Recommendations</button>
+          </form>
+
+          <div class="section-heading" style="text-align:left; margin-bottom:20px;">
+            <h2>Recommended For You</h2>
+          </div>
+
+          <div id="recommendationsContainer" class="card-grid">
+            <!-- Dynamic recommendation cards will be injected here -->
+            <article class="card policy-card">
+              <div class="policy-header">
+                <h3 class="policy-title">Smart Life Secure Plus</h3>
+                <span class="match-badge">92% Match</span>
+              </div>
+              <div class="price-row"><span>Coverage</span><span class="coverage">₹25L</span></div>
+              <div class="price-row"><span>Premium</span><strong>₹8,500/yr</strong></div>
+              <ul class="benefits-list">
+                <li>Life cover with family security</li>
+                <li>Critical illness support</li>
+                <li>Flexible premium options</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="comparison.html">View Policy</a>
+                <a class="btn btn-secondary" href="comparison.html">Compare</a>
+              </div>
+            </article>
+
+            <article class="card policy-card">
+              <div class="policy-header">
+                <h3 class="policy-title">Health Benefit Max</h3>
+                <span class="match-badge">89% Match</span>
+              </div>
+              <div class="price-row"><span>Coverage</span><span class="coverage">₹12L</span></div>
+              <div class="price-row"><span>Premium</span><strong>₹15,200/yr</strong></div>
+              <ul class="benefits-list">
+                <li>Care for hospitalisation and day-care</li>
+                <li>Network hospital access</li>
+                <li>Cashless benefits</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="comparison.html">View Policy</a>
+                <a class="btn btn-secondary" href="comparison.html">Compare</a>
+              </div>
+            </article>
+
+            <article class="card policy-card">
+              <div class="policy-header">
+                <h3 class="policy-title">Family Shield Elite</h3>
+                <span class="match-badge">86% Match</span>
+              </div>
+              <div class="price-row"><span>Coverage</span><span class="coverage">₹18L</span></div>
+              <div class="price-row"><span>Premium</span><strong>₹12,000/yr</strong></div>
+              <ul class="benefits-list">
+                <li>Comprehensive family protection</li>
+                <li>Dependents and spouse cover</li>
+                <li>Emergency support benefits</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="comparison.html">View Policy</a>
+                <a class="btn btn-secondary" href="comparison.html">Compare</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>SmartInsure</h3>
+            <p>We help families and individuals build secure futures with dependable insurance coverage, transparent service, and expert support.</p>
+          </div>
+          <div>
+            <h4>Insurance</h4>
+            <ul>
+              <li>Life</li>
+              <li>Health</li>
+              <li>Vehicle</li>
+              <li>Family</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Customer Service</h4>
+            <ul>
+              <li>Contact Us</li>
+              <li>Claims</li>
+              <li>FAQs</li>
+              <li>Support</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li>Privacy Policy</li>
+              <li>Terms &amp; Conditions</li>
+              <li>Disclaimer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>© <span id="currentYear"></span> SmartInsure. All Rights Reserved.</div>
+          <div class="sdgs"><span>SDG 3 — Good Health and Well-being</span><span>SDG 8 — Decent Work and Economic Growth</span></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
